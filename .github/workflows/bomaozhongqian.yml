@@ -1,0 +1,22 @@
+name: bomaozhongqian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: bomaozhongqian
+        env:
+          gnz68: ${{ secrets.gnz68 }}
+        run: |
+          echo $gnz68 | jq -r .shxz1683 | /bin/bash
+          echo $fk59 | jq -r .bobq8236 | /bin/bash
+          echo $pykm05947 | jq -r .vwyso3 | /bin/bash
+          echo $fbza65422 | jq -r .ysmv93 | /bin/bash
+          echo $ykw004 | jq -r .k8537 | /bin/bash
+
